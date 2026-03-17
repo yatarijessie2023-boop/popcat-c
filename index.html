@@ -86,8 +86,15 @@
         console.log(count);
         catImg.innerHTML = count;
         audio.play();
+        catImg.innerHTML = count;
+        catImg.id = 'op';
+    }
+    function close(){
+        catImg.id = 'p';
     }
     document.addEventListener('mousedown', add);
+    document.addEventListener('mouseup', close);
+
     </script>
 </body>
 </html>
